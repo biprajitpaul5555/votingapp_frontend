@@ -13,7 +13,7 @@ const HeroSection = () => {
                     extensive prebuilt components, and powerful JavaScript plugins.
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <Link to="/login" type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                    <Link to="/signup" type="button" class="btn btn-primary btn-lg px-4 gap-3">
                         Get Started
                     </Link>
                 </div>
