@@ -9,7 +9,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
             <div className="container-fluid">
                 <button
                     className="navbar-toggler"
@@ -27,22 +27,22 @@ const Navbar = () => {
                     </Link>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link" to="#vote-section">
-                                Vote
+                            <Link className="nav-link" to="/#candidate-section">
+                                Candidates
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#result-section">
+                            <Link className="nav-link" to="/#result-section">
                                 Result
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#about-section">
-                                About
+                            <Link className="nav-link" to="/#guide-section">
+                                Guide
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#contact-section">
+                            <Link className="nav-link" to="/#contact-section">
                                 Contact Us
                             </Link>
                         </li>
