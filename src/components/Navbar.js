@@ -47,6 +47,11 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
+                    <ul>
+                        <Link to="/profile" role="button">
+                            <img src="/images/user.jpg"></img>
+                        </Link>
+                    </ul>
                     {!localStorage.getItem("token") ? (
                         <form className="d-flex">
                             <Link className="btn btn-primary mx-1" to="/login" role="button">

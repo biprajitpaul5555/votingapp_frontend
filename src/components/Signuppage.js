@@ -36,7 +36,7 @@ const Signup = () => {
                     </div>
 
                     <div className="adharandpass">
-                        <div className="field">
+                    <div className="field">
                             <input
                                 type="password"
                                 id="adhar"
