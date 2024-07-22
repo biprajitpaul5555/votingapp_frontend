@@ -6,6 +6,8 @@ import Login from "./components/Loginpage";
 import CandidatePage from "./components/CandidatePage";
 import Footer from "./components/Footer";
 import ScrollToAnchor from "./components/ScrollToAnchor";
+import Userprofile from "./components/Userprofile";
+import Passchange from "./components/passwordchange";
 function App() {
     ScrollToAnchor();
     return (
@@ -15,6 +17,8 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/profile" element={<Userprofile/>}></Route>
+                <Route path="/profilepassword" element={<Passchange/>}></Route>
                 <Route path="/candidate" element={<CandidatePage />} />
             </Routes>
             <Footer />

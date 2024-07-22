@@ -48,8 +48,10 @@ code {
     border-radius: 13px;
     margin: 3.5rem auto;
     padding: 3rem;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url("../public/images/vote.jpg");
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("../public/images/hmmback.jpg"); */
+
+    box-shadow: 2px 2px 40px 0px;    
 }
 input {
     height: 2rem;
@@ -118,3 +120,67 @@ label {
     border-radius: 6px;
     display: initial;
 }
+/************************************User profile***********************************/
+.profup img{
+height: 5rem;
+width: 5rem;
+right: 5rem;
+position: relative;
+border-radius: 50%;
+border: 1px solid black;
+}
+.profup{
+    display: flex;
+    margin-right: 20rem;
+}
+.mainpartprof{
+    margin: 5rem auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 13px;
+    box-shadow: 2px 2px 20px 0px;
+    padding: 2rem;
+}
+.info{
+    text-align: left;
+    margin-left: 4rem;
+}
+.info p{
+    font-size: 1.4rem;
+}
+span{
+    font-weight: bold;
+}
+
+/***********************************************navbar userprofile************************************************/
+ul img{
+    margin-left: -46px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    border: 2px solid black;
+}
+/*********************************************password change****************************************************/
+.passing{
+    width: 30%;
+    display: flex;
+    margin: 8rem auto;
+    border: 2px solid black;
+    border-radius: 13px;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#passw{
+    margin-bottom: 2rem;
+} 
+
+
