@@ -4,7 +4,7 @@ const GuideSection = () => {
     return (
         <div className="container py-5 my-5" id="guide-section">
             <h2 className="pb-2 border-bottom text-center">Quick Voting Guide</h2>
-            <div className="accordion" id="accordionExample">
+            <div className="accordion rounded-3" id="accordionExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header">
                         <button
@@ -14,7 +14,7 @@ const GuideSection = () => {
                             data-bs-target="#collapseOne"
                             aria-expanded="true"
                             aria-controls="collapseOne">
-                            Accordion Item #1
+                            Who can Vote ?
                         </button>
                     </h2>
                     <div
@@ -22,12 +22,10 @@ const GuideSection = () => {
                         className="accordion-collapse collapse show"
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the{" "}
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>Adults above 18 Years of age.</strong> Each an Every Citizend of India who is above 18 Years of age
+                            , wheather its Male or Female or of any caste creed and section of society can caste their Votes for any 
+                            Candidate of their choice.{" "}
+                            {/* <code>.accordion-body</code> */}
                         </div>
                     </div>
                 </div>
@@ -40,17 +38,15 @@ const GuideSection = () => {
                             data-bs-target="#collapseTwo"
                             aria-expanded="false"
                             aria-controls="collapseTwo">
-                            Accordion Item #2
+                            Basic Overview of Election in India
                         </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the{" "}
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>Democratic Government For the people, Of the people , By the people.</strong> There is Different levels
+                            at which Indian elections takes place, 542 Parliamentary Seats are available, and at Assembly level States have
+                            minimum of 60 seats , the people of India or state Elect their Leader every 5 years{" "}
+                            {/* <code>.accordion-body</code> */}
                         </div>
                     </div>
                 </div>
@@ -63,17 +59,15 @@ const GuideSection = () => {
                             data-bs-target="#collapseThree"
                             aria-expanded="false"
                             aria-controls="collapseThree">
-                            Accordion Item #3
+                            When and how can we vote in this App ?
                         </button>
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the{" "}
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>24 X 7.</strong> You can Vote in this App whenever you want but <strong>Once</strong> , for Login and Signup
+                            you have to use your Aadhaar credential and can make your profile and can choose anyone you want to vote for. For any query
+                            Contact us in the below section. {" "}
+                            {/* <code>.accordion-body</code>, though the transition does limit overflow. */}
                         </div>
                     </div>
                 </div>

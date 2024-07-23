@@ -48,8 +48,8 @@ code {
     border-radius: 13px;
     margin: 3.5rem auto;
     padding: 3rem;
-    /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url("../public/images/hmmback.jpg"); */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("../public/images/hmmback.jpg");
 
     box-shadow: 2px 2px 40px 0px;    
 }
@@ -183,4 +183,24 @@ ul img{
     margin-bottom: 2rem;
 } 
 
+/**************************************************bottomnav*********************************************************/
 
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.rounded-3{
+    box-shadow:2px 2px 20px 0px;
+}
+.toptop{
+    box-shadow:2px 2px 20px 0px;
+}
+.lead{
+    font-weight: 200;
+}
+.navii{
+    background-color: red;
+}
