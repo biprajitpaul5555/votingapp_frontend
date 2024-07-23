@@ -9,36 +9,36 @@ const CandidateSection = () => {
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
                     <div className="card h-100">
-                        <img src="/images/vote.jpg" className="card-img-top" alt="candidate-dp" />
+                        <img src="/images/candidate1.jpg" className="card-img-top toptop" alt="candidate-dp" />
                         <div className="card-body">
-                            <h5 className="card-title">Candidate 1</h5>
+                            <h5 className="card-title">Arjun Sharma</h5>
+                            <h6 className="card-subtitle mb-2 text-body-secondary">Candidate Party : <span>INC(Indian National Congress)</span></h6>
                             <p className="card-text">
-                                This is a wider card with supporting text below as a natural lead-in to additional
-                                content. This content is a little bit longer.
+                                Union Cabinet Minister for last 10 years of Politics.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="col">
                     <div className="card h-100">
-                        <img src="/images/vote.jpg" className="card-img-top" alt="candidate-dp" />
+                        <img src="/images/candidate2.jpg" className="card-img-top toptop" alt="candidate-dp" />
                         <div className="card-body">
-                            <h5 className="card-title">Candidate 2</h5>
+                            <h5 className="card-title">Priya Patel</h5>
+                            <h6 className="card-subtitle mb-2 text-body-secondary">Candidate Party : <span>INC(Indian National Congress)</span></h6>
                             <p className="card-text">
-                                This card has supporting text below as a natural lead-in to additional content.
+                                Stayed CM(Chief Minister)of UTTAR PRADESH for last 5 years .
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="col">
                     <div className="card h-100">
-                        <img src="/images/vote.jpg" className="card-img-top" alt="candidate-dp" />
+                        <img src="/images/candidate3.jpg" className="card-img-top toptop" alt="candidate-dp" />
                         <div className="card-body">
-                            <h5 className="card-title">Candidate 3</h5>
+                            <h5 className="card-title">Rohan Gupta</h5>
+                            <h6 className="card-subtitle mb-2 text-body-secondary">Candidate Party : <span>BJP(Bharatiya Janata Party)</span></h6>
                             <p className="card-text">
-                                This is a wider card with supporting text below as a natural lead-in to additional
-                                content. This card has even longer content than the first to show that equal height
-                                action.
+                                Competing for the first in Parliamentary Election.
                             </p>
                         </div>
                     </div>

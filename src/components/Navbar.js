@@ -9,8 +9,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top navii" data-bs-theme="dark" style={{backgroundColor:"red"}}>
+            <div className="container-fluid" >
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -49,7 +49,7 @@ const Navbar = () => {
                     </ul>
                     <ul>
                         <Link to="/profile" role="button">
-                            <img src="/images/user.jpg"></img>
+                            <img src="/images/users.png"></img>
                         </Link>
                     </ul>
                     {!localStorage.getItem("token") ? (
