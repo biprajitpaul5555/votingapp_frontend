@@ -61,7 +61,7 @@ function Userprofile() {
                     <p>
                         {" "}
                         {/* <span>Voted:</span>Yes{" "} */}
-                        <span>Voted:</span>
+                        <span>Voted: </span>
                         {profile.isvote ? "Yes" : "No"}{" "}
                     </p>
                     <Link className="btn btn-primary mx-1" to="/profilepassword" role="button">
