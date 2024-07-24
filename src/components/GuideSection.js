@@ -22,10 +22,9 @@ const GuideSection = () => {
                         className="accordion-collapse collapse show"
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>Adults above 18 Years of age.</strong> Each an Every Citizend of India who is above 18 Years of age
-                            , wheather its Male or Female or of any caste creed and section of society can caste their Votes for any 
-                            Candidate of their choice.{" "}
-                            {/* <code>.accordion-body</code> */}
+                            <strong>Adults above 18 Years of age.</strong> Each an Every Citizend of India who is above
+                            18 Years of age , wheather its Male or Female or of any caste creed and section of society
+                            can caste their Votes for any Candidate of their choice.{" "}
                         </div>
                     </div>
                 </div>
@@ -43,10 +42,10 @@ const GuideSection = () => {
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>Democratic Government For the people, Of the people , By the people.</strong> There is Different levels
-                            at which Indian elections takes place, 542 Parliamentary Seats are available, and at Assembly level States have
-                            minimum of 60 seats , the people of India or state Elect their Leader every 5 years{" "}
-                            {/* <code>.accordion-body</code> */}
+                            <strong>Democratic Government For the people, Of the people , By the people.</strong> There
+                            is Different levels at which Indian elections takes place, 542 Parliamentary Seats are
+                            available, and at Assembly level States have minimum of 60 seats , the people of India or
+                            state Elect their Leader every 5 years{" "}
                         </div>
                     </div>
                 </div>
@@ -64,10 +63,10 @@ const GuideSection = () => {
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>24 X 7.</strong> You can Vote in this App whenever you want but <strong>Once</strong> , for Login and Signup
-                            you have to use your Aadhaar credential and can make your profile and can choose anyone you want to vote for. For any query
-                            Contact us in the below section. {" "}
-                            {/* <code>.accordion-body</code>, though the transition does limit overflow. */}
+                            <strong>24 X 7.</strong> You can Vote in this App whenever you want but{" "}
+                            <strong>Once</strong> , for Login and Signup you have to use your Aadhaar credential and can
+                            make your profile and can choose anyone you want to vote for. For any query Contact us in
+                            the below section.{" "}
                         </div>
                     </div>
                 </div>

@@ -48,11 +48,6 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {/* <ul>
-                        <Link to="/profile" role="button">
-                            <img src="/images/users.png" alt="user-logo" />
-                        </Link>
-                    </ul> */}
                     {!localStorage.getItem("token") ? (
                         <form className="d-flex">
                             <Link className="btn btn-primary mx-1" to="/login" role="button">
@@ -63,9 +58,6 @@ const Navbar = () => {
                             </Link>
                         </form>
                     ) : (
-                        // <button className="btn btn-primary" onClick={handleLogout}>
-                        //     Logout
-                        // </button>
                         <form className="d-flex">
                             <Link to="/profile" role="button">
                                 <img

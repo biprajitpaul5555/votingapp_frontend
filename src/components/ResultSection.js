@@ -32,17 +32,14 @@ const ResultSection = () => {
                 <h2 className="text-body-emphasis">Results</h2>
                 <div className="d-flex justify-content-around align-items-center my-5">
                     <div>
-                        {/* <h3>5000</h3> */}
                         <h3>{totalVotes}</h3>
                         Votes casted
                     </div>
                     <div>
-                        {/* <h3>154</h3> */}
                         <h3>{totalCandidates}</h3>
                         Total candidates
                     </div>
                     <div>
-                        {/* <h3>XYZ</h3> */}
                         <h3>{highestVotes}</h3>
                         Highest votes
                     </div>
