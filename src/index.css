@@ -51,7 +51,7 @@ code {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
         url("../public/images/hmmback.jpg");
 
-    box-shadow: 2px 2px 40px 0px;    
+    box-shadow: 2px 2px 40px 0px;
 }
 input {
     height: 2rem;
@@ -121,19 +121,19 @@ label {
     display: initial;
 }
 /************************************User profile***********************************/
-.profup img{
-height: 5rem;
-width: 5rem;
-right: 5rem;
-position: relative;
-border-radius: 50%;
-border: 1px solid black;
+.profup img {
+    height: 5rem;
+    width: 5rem;
+    right: 5rem;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid black;
 }
-.profup{
+.profup {
     display: flex;
     margin-right: 20rem;
 }
-.mainpartprof{
+.mainpartprof {
     margin: 5rem auto;
     width: 60%;
     display: flex;
@@ -145,19 +145,19 @@ border: 1px solid black;
     box-shadow: 2px 2px 20px 0px;
     padding: 2rem;
 }
-.info{
+.info {
     text-align: left;
     margin-left: 4rem;
 }
-.info p{
+.info p {
     font-size: 1.4rem;
 }
-span{
+span {
     font-weight: bold;
 }
 
 /***********************************************navbar userprofile************************************************/
-ul img{
+#nav-user-logo {
     margin-left: -46px;
     height: 2.5rem;
     width: 2.5rem;
@@ -167,7 +167,7 @@ ul img{
     border: 2px solid black;
 }
 /*********************************************password change****************************************************/
-.passing{
+.passing {
     width: 30%;
     display: flex;
     margin: 8rem auto;
@@ -179,28 +179,27 @@ ul img{
     justify-content: center;
     align-items: center;
 }
-#passw{
+.passw {
     margin-bottom: 2rem;
-} 
+}
 
 /**************************************************bottomnav*********************************************************/
 
-h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: bold;
     margin-bottom: 2rem;
-
 }
 
-.rounded-3{
-    box-shadow:2px 2px 20px 0px;
+.rounded-3 {
+    box-shadow: 2px 2px 20px 0px;
 }
-.toptop{
-    box-shadow:2px 2px 20px 0px;
+.toptop {
+    box-shadow: 2px 2px 20px 0px;
 }
-.lead{
+.lead {
     font-weight: 200;
 }
-.navii{
+.navii {
     background-color: red;
 }

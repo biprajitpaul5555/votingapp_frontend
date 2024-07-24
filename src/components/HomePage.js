@@ -5,11 +5,11 @@ import GuideSection from "./GuideSection";
 import ResultSection from "./ResultSection";
 import ContactSection from "./ContactSection";
 
-const HomePage = () => {
+const HomePage = ({ candidates }) => {
     return (
         <>
             <HeroSection />
-            <CandidateSection />
+            <CandidateSection candidates={candidates} />
             <ResultSection />
             <GuideSection />
             <ContactSection />

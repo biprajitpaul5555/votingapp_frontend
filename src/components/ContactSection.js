@@ -6,7 +6,7 @@ const ContactSection = () => {
             <h2 className="pb-2 border-bottom text-center">Have Your Say</h2>
 
             <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">
+                <label htmlFor="exampleFormControlInput1" className="form-label">
                     Email address
                 </label>
                 <input
@@ -17,7 +17,7 @@ const ContactSection = () => {
                 />
             </div>
             <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label">
+                <label htmlFor="exampleFormControlTextarea1" className="form-label">
                     Example textarea
                 </label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>

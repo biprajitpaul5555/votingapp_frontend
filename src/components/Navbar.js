@@ -6,11 +6,12 @@ const Navbar = () => {
     const handleLogout = () => {
         localStorage.removeItem("token");
         navigate("/login");
+        alert("Logged out successfully");
     };
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top navii" data-bs-theme="dark" style={{backgroundColor:"red"}}>
-            <div className="container-fluid" >
+        <nav className="navbar navbar-expand-lg sticky-top navii">
+            <div className="container-fluid">
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -47,11 +48,11 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    <ul>
+                    {/* <ul>
                         <Link to="/profile" role="button">
-                            <img src="/images/users.png"></img>
+                            <img src="/images/users.png" alt="user-logo" />
                         </Link>
-                    </ul>
+                    </ul> */}
                     {!localStorage.getItem("token") ? (
                         <form className="d-flex">
                             <Link className="btn btn-primary mx-1" to="/login" role="button">
@@ -62,9 +63,17 @@ const Navbar = () => {
                             </Link>
                         </form>
                     ) : (
-                        <button className="btn btn-primary" onClick={handleLogout}>
-                            Logout
-                        </button>
+                        // <button className="btn btn-primary" onClick={handleLogout}>
+                        //     Logout
+                        // </button>
+                        <form className="d-flex">
+                            <Link to="/profile" role="button">
+                                <img src="/images/users.png" alt="user-logo" id="nav-user-logo" />
+                            </Link>
+                            <button className="btn btn-primary" onClick={handleLogout}>
+                                Logout
+                            </button>
+                        </form>
                     )}
                 </div>
             </div>

@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const [input, setInput] = useState({
+        name: "",
+        adhar: "",
+        password: "",
+    });
+    const navigate = useNavigate();
+
     const toggleIcon = () => {
         const arr = document.getElementsByClassName("eye-icon");
         for (let i = 0; i < arr.length; i++) {
@@ -15,21 +23,61 @@ const Login = () => {
             }
         }
     };
+    const handleChange = (e) => {
+        setInput({ ...input, [e.target.id]: e.target.value });
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/user/login`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ ...input }),
+        });
+        const json = await response.json();
+        if (response.ok) {
+            // Save the auth token and redirect
+            localStorage.setItem("token", json.token);
+            navigate("/");
+            alert("Logged in successfully");
+        } else {
+            alert(json.error);
+        }
+    };
 
     return (
         <div className="mainpart">
             <div>
-                <form className="body">
+                <form className="body" onSubmit={handleSubmit}>
                     <div className="voteindia">
                         <img src="/images/voteIndia.jpg" className="voteindia-logo" alt="kuch bhi" />
                     </div>
                     <h1>Login</h1>
                     <div className="name&age toptwo">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" />
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            value={input.name}
+                            onChange={handleChange}
+                        />
                     </div>
 
                     <div className="adhar">
-                        <input type="number" id="adhar" name="adhar" placeholder="Your Aadhaar Number" />
+                        <div className="field">
+                            <input
+                                type="password"
+                                id="adhar"
+                                className="pass"
+                                name="adhar"
+                                placeholder="Your Aadhaar Number"
+                                value={input.adhar}
+                                onChange={handleChange}
+                            />
+                            <i className="fa-solid fa-eye-slash eye-icon" onClick={toggleIcon}></i>
+                        </div>
                     </div>
                     <div className="password">
                         <div className="field">
@@ -39,6 +87,8 @@ const Login = () => {
                                 name="password"
                                 className="pass"
                                 placeholder="Enter your password"
+                                value={input.password}
+                                onChange={handleChange}
                             />
                             <i className="fa-solid fa-eye-slash eye-icon" onClick={toggleIcon}></i>
                         </div>
