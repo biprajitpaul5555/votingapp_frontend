@@ -68,7 +68,12 @@ const Navbar = () => {
                         // </button>
                         <form className="d-flex">
                             <Link to="/profile" role="button">
-                                <img src="/images/users.png" alt="user-logo" id="nav-user-logo" className="mx-1" />
+                                <img
+                                    src="/votingapp_frontend/images/users.png"
+                                    alt="user-logo"
+                                    id="nav-user-logo"
+                                    className="mx-1"
+                                />
                             </Link>
                             <button className="btn btn-primary mx-1" onClick={handleLogout}>
                                 Logout

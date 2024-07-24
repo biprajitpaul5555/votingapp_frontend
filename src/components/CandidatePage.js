@@ -118,7 +118,7 @@ const CandidatePage = ({ candidates }) => {
                         <div className="col" key={idx}>
                             <div className="card">
                                 <img
-                                    src={`/images/candidate${idx + 1}.jpg`}
+                                    src={`/votingapp_frontend/images/candidate${idx + 1}.jpg`}
                                     className="card-img-top"
                                     alt="candidate-dp"
                                 />

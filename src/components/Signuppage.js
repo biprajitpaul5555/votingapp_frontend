@@ -55,7 +55,7 @@ const Signup = () => {
             <div>
                 <form className="body" onSubmit={handleSubmit}>
                     <div className="voteindia">
-                        <img src="/images/voteIndia.jpg" className="voteindia-logo" alt="kuch bhi" />
+                        <img src="/votingapp_frontend/images/voteIndia.jpg" className="voteindia-logo" alt="kuch bhi" />
                     </div>
                     <h1>Signup</h1>
                     <div className="name&age toptwo">

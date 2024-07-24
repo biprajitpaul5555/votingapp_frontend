@@ -50,7 +50,7 @@ const CandidateSection = ({ candidates }) => {
                         <div className="col" key={idx}>
                             <div className="card h-100">
                                 <img
-                                    src={`/images/candidate${idx + 1}.jpg`}
+                                    src={`/votingapp_frontend/images/candidate${idx + 1}.jpg`}
                                     className="card-img-top toptop"
                                     alt="candidate-dp"
                                 />

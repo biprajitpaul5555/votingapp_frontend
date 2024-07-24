@@ -26,7 +26,7 @@ function Userprofile() {
         <>
             <div className="mainpartprof">
                 <div className="profup">
-                    <img src="/images/users.png" alt="user-logo" />
+                    <img src="/votingapp_frontend/images/users.png" alt="user-logo" />
                     <div>
                         {/* <h3>Sutirtha Modak</h3> */}
                         <h3>{profile.name}</h3>
