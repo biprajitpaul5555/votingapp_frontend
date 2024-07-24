@@ -229,7 +229,6 @@ label {
 
     @media (max-width: 770px) {
         font-size: 1rem;
-
     }
 }
 
@@ -261,6 +260,9 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 770px) {
+        width: 72%;
+    }
 }
 
 .passw {
