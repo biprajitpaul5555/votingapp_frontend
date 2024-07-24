@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/biprajitpaul5555/votingapp_frontend/static/css/main.be2e8a99.css",
+    "main.js": "/biprajitpaul5555/votingapp_frontend/static/js/main.293a5ddd.js",
+    "static/media/hmmback.jpg": "/biprajitpaul5555/votingapp_frontend/static/media/hmmback.693ab7b7c5bc79df20c4.jpg",
+    "index.html": "/biprajitpaul5555/votingapp_frontend/index.html",
+    "main.be2e8a99.css.map": "/biprajitpaul5555/votingapp_frontend/static/css/main.be2e8a99.css.map",
+    "main.293a5ddd.js.map": "/biprajitpaul5555/votingapp_frontend/static/js/main.293a5ddd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be2e8a99.css",
+    "static/js/main.293a5ddd.js"
+  ]
+}
