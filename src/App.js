@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ScrollToAnchor from "./components/ScrollToAnchor";
 import Userprofile from "./components/Userprofile";
 import Passchange from "./components/Passwordchange";
+import Result from "./components/Resultpage";
 
 function App() {
     const [candidates, setCandidates] = useState([]);
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/profile" element={<Userprofile />} />
                 <Route path="/profilepassword" element={<Passchange />} />
                 <Route path="/candidate" element={<CandidatePage candidates={candidates} />} />
+                <Route path="/result" element={<Result/>}/>
             </Routes>
             <Footer />
         </>
