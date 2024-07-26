@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -12,6 +12,20 @@ const Signup = () => {
         password: "",
     });
     const navigate = useNavigate();
+    useEffect(() => {
+        const adhar = document.getElementById("adhar");
+        adhar.addEventListener("input", (e) => {
+            if (!e.target.value) return;
+            const isNum = e.target.value[e.target.value.length - 1].match(/[0-9]/g);
+            if (!isNum) e.target.value = e.target.value.substring(0, e.target.value.length - 1);
+        });
+        const mobile = document.getElementById("mobile");
+        mobile.addEventListener("input", (e) => {
+            if (!e.target.value) return;
+            const isNum = e.target.value[e.target.value.length - 1].match(/[0-9]/g);
+            if (!isNum) e.target.value = e.target.value.substring(0, e.target.value.length - 1);
+        });
+    }, []);
 
     const toggleIcon = () => {
         const arr = document.getElementsByClassName("eye-icon");
@@ -64,6 +78,7 @@ const Signup = () => {
                             id="name"
                             name="name"
                             placeholder="Enter your name"
+                            autoComplete="name"
                             value={input.name}
                             onChange={handleChange}
                         />
@@ -83,6 +98,7 @@ const Signup = () => {
                             id="email"
                             name="email"
                             placeholder="Enter your email"
+                            autoComplete="email"
                             value={input.email}
                             onChange={handleChange}
                         />
@@ -91,6 +107,7 @@ const Signup = () => {
                             id="mobile"
                             name="mobile"
                             placeholder="Enter your contact"
+                            autoComplete="tel"
                             value={input.mobile}
                             onChange={handleChange}
                         />
@@ -105,6 +122,7 @@ const Signup = () => {
                                 className="pass"
                                 name="adhar"
                                 placeholder="Your Aadhaar Number"
+                                autoComplete="off"
                                 value={input.adhar}
                                 onChange={handleChange}
                             />
@@ -118,6 +136,7 @@ const Signup = () => {
                                 className="pass"
                                 name="password"
                                 placeholder="Enter a Strong password"
+                                autoComplete="new-password"
                                 value={input.password}
                                 onChange={handleChange}
                             />
