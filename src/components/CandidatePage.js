@@ -25,7 +25,7 @@ const CandidatePage = ({ candidates }) => {
             }
         };
         fetchProfile();
-    }, [clicked]);
+    }, [clicked, navigate]);
 
     const handleClick = async (e) => {
         const candidateid = e.target.value;
