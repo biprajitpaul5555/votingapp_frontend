@@ -1,9 +1,9 @@
 import React from "react";
-import HeroSection from "./HeroSection";
-import CandidateSection from "./CandidateSection";
-import GuideSection from "./GuideSection";
-import ResultSection from "./ResultSection";
-import ContactSection from "./ContactSection";
+import HeroSection from "../components/HeroSection";
+import CandidateSection from "../components/CandidateSection";
+import ResultSection from "../components/ResultSection";
+import GuideSection from "../components/GuideSection";
+import ContactSection from "../components/ContactSection";
 
 const HomePage = ({ candidates }) => {
     return (

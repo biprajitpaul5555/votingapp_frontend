@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HomePage from "./components/HomePage";
-import Signup from "./components/Signuppage";
-import Login from "./components/Loginpage";
-import CandidatePage from "./components/CandidatePage";
 import Footer from "./components/Footer";
 import ScrollToAnchor from "./components/ScrollToAnchor";
-import Userprofile from "./components/Userprofile";
-import Passchange from "./components/Passwordchange";
-import Result from "./components/Resultpage";
+import HomePage from "./pages/HomePage";
+import Signup from "./pages/Signuppage";
+import Login from "./pages/Loginpage";
+import Userprofile from "./pages/Userprofile";
+import Passchange from "./pages/Passwordchange";
+import CandidatePage from "./pages/CandidatePage";
+import Result from "./pages/Resultpage";
 
 function App() {
     const [candidates, setCandidates] = useState([]);
@@ -37,7 +37,7 @@ function App() {
                 <Route path="/profile" element={<Userprofile />} />
                 <Route path="/profilepassword" element={<Passchange />} />
                 <Route path="/candidate" element={<CandidatePage candidates={candidates} />} />
-                <Route path="/result" element={<Result/>}/>
+                <Route path="/result" element={<Result />} />
             </Routes>
             <Footer />
         </>
